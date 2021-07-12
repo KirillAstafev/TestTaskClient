@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.testclient.controller.MainController">
+    <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <Menu mnemonicParsing="false" text="Файл">
+            <MenuItem accelerator="Ctrl+E" mnemonicParsing="false" onAction="#exitMenuAction" text="Закрыть" />
+        </Menu>
+    </MenuBar>
+    <Label layoutX="14.0" layoutY="25.0" text="Доступные курсы">
+        <font>
+            <Font size="16" />
+        </font>
+    </Label>
+    <ScrollPane layoutX="12.0" layoutY="51.0" prefHeight="312.0" prefWidth="572.0">
+        <VBox fx:id="box" />
+    </ScrollPane>
+    <Button layoutX="448.0" layoutY="365.0" onAction="#registerAction" text="Зарегистрировать курсы" />
+</AnchorPane>

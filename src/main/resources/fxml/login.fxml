@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.testclient.controller.LoginController">
+    <PasswordField fx:id="passwordText" layoutX="140.0" layoutY="193.0" prefHeight="25.0" prefWidth="201.0" promptText="Введите пароль">
+      <font>
+         <Font size="14.0" />
+      </font></PasswordField>
+    <TextField fx:id="loginText" layoutX="140.0" layoutY="138.0" prefHeight="25.0" prefWidth="201.0" promptText="Введите имя пользователя">
+      <font>
+         <Font size="14.0" />
+      </font></TextField>
+   <Button layoutX="140.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginAction" text="Войти" />
+   <Label layoutX="78.0" layoutY="300.0" prefHeight="17.0" prefWidth="361.0" textFill="#f82601" fx:id="errorLabel"/>
+</AnchorPane>
